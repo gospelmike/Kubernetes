@@ -1,5 +1,4 @@
 pipeline {
-    //Define variable
     environment {
     registry = "gospelmike/myapp"
     registryCredential = 'dockerhub'
