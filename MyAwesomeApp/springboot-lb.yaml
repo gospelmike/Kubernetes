@@ -13,7 +13,7 @@ spec:
         app: best-app
     spec:
       containers:
-      - name: my-best-app
+      - name: best-app
         image: gospelmike/myapp:latest
         imagePullPolicy: Always
         ports:
