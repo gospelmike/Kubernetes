@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-ak-deployment
+  name: best-app-deploy
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: angular-app
+      app: best-app
   template:
     metadata:
       labels:
-        app: angular-app
+        app: best-app
     spec:
       containers:
-      - name: my-angular-app
-        image: akdevopscoaching/mywebapp:latest
+      - name: my-best-app
+        image: gospelmike/myapp:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8085
@@ -23,10 +23,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: angular-app-svc
+  name: best-app-svc
 spec:
   selector:
-    app: angular-app
+    app: best-app
   ports:
     - protocol: TCP
       port: 8085
