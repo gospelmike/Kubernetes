@@ -6,7 +6,7 @@ pipeline {
     }
     agent any
     tools {
-        maven 'M3_HOME'
+        maven 'M2_HOME'
     }
     stages{
         stage('Git Checkout'){
