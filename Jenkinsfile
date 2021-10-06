@@ -22,11 +22,7 @@ pipeline {
         stage('Building image'){
           steps{
              script {
-               dockerImage = docker.build("MyAwesomeApp:${env.BUILD_ID}",
-                        "--label \"GIT_COMMIT=${env.GIT_COMMIT}\""
-                        + " --build-arg MY_ARG=myArg"
-                        + " ."
-                    )
+               dockerImage = docker.build(registry + ":$BUILD_NUMBER" , "MyAwesomeApp")
              }
           }
         }
