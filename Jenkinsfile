@@ -9,7 +9,7 @@ pipeline {
         maven 'M2_HOME'
     }
     stages{
-        stage('Git Checkout'){
+        stage('Git Checkout'){ 
             steps{
                 git 'https://github.com/gospelmike/Kubernetes'
             }
