@@ -8,7 +8,7 @@ also install Java and Maven.
 
 Steps:
 
-1. Make sure you clone the repo locally.
+1. Make sure you clone the repo locally
 
 git clone https://bitbucket.org/ananthkannan/myawesomeangularapprepo
 
