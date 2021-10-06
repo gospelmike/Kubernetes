@@ -1,7 +1,7 @@
 pipeline {
     environment{
     registry = "gospelmike/myapp"
-    registryCredential = 'DockerUserId'
+    registryCredential = 'DockerReg'
     dockerImage = ''
     }
     agent any
@@ -29,7 +29,7 @@ pipeline {
         stage('Push Image'){
           steps{
            script {
-              docker.withRegistry(registry, registryCredential) {
+              docker.withRegistry('', registryCredential) {
                 dockerImage.push("latest")
               }
             }
