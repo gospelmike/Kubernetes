@@ -40,14 +40,6 @@ pipeline {
             sh "docker rmi $registry:$BUILD_NUMBER"
           }
         }
-        stage('Deploy in K8s'){
-          steps{
-            kubernetesDeploy(
-                configs: 'MyAwesomeApp/Deployment.yml',
-                kubeconfigId: 'K8S',
-                enableConfigSubstitution: true
-            )
-          }
-        }
+     
     }
 }
