@@ -1,7 +1,7 @@
 pipeline {
     environment{
     registry = "gospelmike/myapp"
-    registryCredential = 'dockerid'
+    registryCredential = 'dockerid2'
     dockerImage = ''
     }
     agent any
