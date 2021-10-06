@@ -36,4 +36,4 @@ change_to_your_docker_user_id/springbootapp   latest              69c91142dca6  
 sudo docker run -p 8085:8085 change_to_your_docker_user_id/myspringbootapp
 
 7. Now go to browser, and access public DNS name with port 8085
-you should see the springboot web app page running
+you should see the springboot web app page running!
